@@ -11,6 +11,8 @@ https://jsfiddle.net/user/nickmmark/fiddles/
 Uses the [Google Maps Javascript API](https://developers.google.com/maps/documentation) particularly the heatmap function.
 
 # Examples
+![example image](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/screenshot.png)
+
 
 # Data Source(s)
 - [Seattle Fire 911 Calls](https://data.seattle.gov/Public-Safety/Seattle-Real-Time-Fire-911-Calls/kzjm-xkqj) multi-year database updated every 5 minutes; available as an API or as a .csv for download

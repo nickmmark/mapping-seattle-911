@@ -8,6 +8,7 @@ https://jsfiddle.net/user/nickmmark/fiddles/
 # Details
 
 # Code
+Uses the [Google Maps Javascript API](https://developers.google.com/maps/documentation) particularly the heatmap function.
 
 # Examples
 
@@ -19,3 +20,4 @@ https://jsfiddle.net/user/nickmmark/fiddles/
 v1.0 by Nick Mark, 7/16/2017
 
 # References
+- [Public911 Seattle](http://www.public911.com/app/#/seattle)

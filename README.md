@@ -2,10 +2,11 @@
 Mapping and geospatial analysis of open source Seattle Fire Realtime 911 data, with a particular focus on out of hospital cardiac arrest (OHCA). 
 
 ![mapping cardiac arrest calls in Seattle, WA](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/screenshot%202.png)
+
 _[live and interactive heatmap](https://jsfiddle.net/user/nickmmark/fiddles/) showing the locations of cardiac arrests in Seattle, WA_
 
 # Background
-Out of Hospital Cardiac Arrest is a life threatening emergency. Prompt initation of high quality CPR, early defibrilation, and advanced life support and transport to a suitable medical center can dramatically improve outcomes. Because of the time sensitive nature of cardiac arrest resuscitation, geospatial analysis of where cardiac arrests occur is potentially useful. Thus, identifying 'hotspots' for OHCA can conceivable be used in several different ways:
+[Out of Hospital Cardiac Arrest](https://www.cdc.gov/mmwr/preview/mmwrhtml/ss6008a1.htm) is a life threatening emergency. Prompt initation of high quality CPR, early defibrilation, and advanced life support and transport to a suitable medical center can dramatically improve outcomes. Because of the time sensitive nature of cardiac arrest resuscitation, geospatial analysis of where cardiac arrests occur is potentially useful. Thus, identifying 'hotspots' for OHCA can conceivable be used in several different ways:
 - it can be used to determine where to place [AEDs](https://en.wikipedia.org/wiki/Automated_external_defibrillator)
 - it can be used to determine staging locations for ambulances
 

@@ -41,4 +41,7 @@ v1.0 by Nick Mark, 7/16/2017
 * [Public911 Seattle](http://www.public911.com/app/#/seattle)
 * Similar work in other areas:
   * ***Houston, Texas***: Raun LH et al, [Geospatial analysis for targeting out-of-hospital cardiac arrest intervention](https://www.ncbi.nlm.nih.gov/pubmed/23867019), Am J Prev Med. 2013 Aug;45(2)
-  * ***Singapore***: M. Tan et al, [Geospatial Analysis of Out-of-hospital Cardiac Arrest (OHCA) in Singapore](https://www.researchgate.net/publication/292761719_GEOSPATIAL_ANALYSIS_OF_OUT-OF-HOSPITAL_CARDIAC_ARREST_OHCA_IN_SINGAPORE), Irish Journal of Medical Science 2015 184:560-561
+  * ***Mesa, Arizona*** Somers S, [Spatial Cluster Analysis of Out-of-Hospital Cardiac arrest in Mesa Arizona](https://nfa.usfa.fema.gov/pdf/efop/efo46779.pdf)
+  * ***Singapore***: Tan M et al, [Geospatial Analysis of Out-of-hospital Cardiac Arrest (OHCA) in Singapore](https://www.researchgate.net/publication/292761719_GEOSPATIAL_ANALYSIS_OF_OUT-OF-HOSPITAL_CARDIAC_ARREST_OHCA_IN_SINGAPORE), Irish Journal of Medical Science 2015 184:560-561
+  * ***Taiwan*** Chen CC et al, [Spatial Variation and Resuscitation Process Affecting Survival after Out-of-Hospital Cardiac Arrests (OHCA)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0144882), PLoS One 2015
+

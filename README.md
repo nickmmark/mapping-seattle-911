@@ -17,12 +17,12 @@ https://jsfiddle.net/user/nickmmark/fiddles/
 ```
 
 ### Details
-I pull data from the Seattle Fire 911 API.
-I use the incident type '''Medical Response, 7 per rule''' to identify high acuity medical emergencies, of which OHCA is one particular subtype.
+* I pull data from the [Seattle Fire 911 API](https://data.seattle.gov/Public-Safety/Seattle-Real-Time-Fire-911-Calls/kzjm-xkqj) provided by the [Seattle Open Data Program](http://www.seattle.gov/tech/initiatives/open-data).
+* I use the incident type '''Medical Response, 7 per rule''' to identify high acuity medical emergencies, of which OHCA is one particular subtype.
+* I export the GPS coordinates of these events and load them into the [Google Maps Javascript API](https://developers.google.com/maps/documentation) where I display the events as a heatmap.
 ![incident type example](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/incident_type.png)
 
-# Code
-Uses the [Google Maps Javascript API](https://developers.google.com/maps/documentation) particularly the heatmap function.
+* The Google maps API makes it easy to zoom and translate on the map. You can adjust the color scheme, and the heatmap gradient, and 
 
 ### Examples
 ![example image](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/screenshot.png)
@@ -34,6 +34,11 @@ Uses the [Google Maps Javascript API](https://developers.google.com/maps/documen
 
 ### Version/To-Do
 v1.0 by Nick Mark, 7/16/2017
+* [ ] need to load census data for population density to normalize
+* [ ] would also be helpful to explore by ZIP and aggregate
 
 ### References
-- [Public911 Seattle](http://www.public911.com/app/#/seattle)
+* [Public911 Seattle](http://www.public911.com/app/#/seattle)
+* Similar work in other areas:
+  * ***Houston, Texas***: Raun LH et al, [Geospatial analysis for targeting out-of-hospital cardiac arrest intervention](https://www.ncbi.nlm.nih.gov/pubmed/23867019), Am J Prev Med. 2013 Aug;45(2)
+  * ***Singapore***: M. Tan et al, [Geospatial Analysis of Out-of-hospital Cardiac Arrest (OHCA) in Singapore](https://www.researchgate.net/publication/292761719_GEOSPATIAL_ANALYSIS_OF_OUT-OF-HOSPITAL_CARDIAC_ARREST_OHCA_IN_SINGAPORE), Irish Journal of Medical Science 2015 184:560-561

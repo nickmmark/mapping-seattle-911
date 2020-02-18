@@ -82,7 +82,8 @@ v1.0 by Nick Mark, 7/16/2017
 
 ### References
 * [Public911 Seattle](http://www.public911.com/app/#/seattle)
-* Similar work in other areas:
+* Raun LH et al, [Geospatial analysis for targeting out-of-hospital cardiac arrest intervention](https://www.ncbi.nlm.nih.gov/pubmed/23867019), Am J Prev Med. 2013 
+* Similar work in other geographic regions:
   * ***Houston, Texas***: Raun LH et al, [Geospatial analysis for targeting out-of-hospital cardiac arrest intervention](https://www.ncbi.nlm.nih.gov/pubmed/23867019), Am J Prev Med. 2013 Aug;45(2)
   * ***Mesa, Arizona***: Somers S, [Spatial Cluster Analysis of Out-of-Hospital Cardiac arrest in Mesa Arizona](https://nfa.usfa.fema.gov/pdf/efop/efo46779.pdf)
   * ***Singapore***: Tan M et al, [Geospatial Analysis of Out-of-hospital Cardiac Arrest (OHCA) in Singapore](https://www.researchgate.net/publication/292761719_GEOSPATIAL_ANALYSIS_OF_OUT-OF-HOSPITAL_CARDIAC_ARREST_OHCA_IN_SINGAPORE), Irish Journal of Medical Science 2015 184:560-561

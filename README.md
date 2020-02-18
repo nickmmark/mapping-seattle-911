@@ -24,13 +24,45 @@ Mapping and geospatial analysis of open source Seattle Fire Realtime 911 data, w
 * But what if we want more nuanced control of the visualization? For this it helps to use the [GoogleMaps API](https://developers.google.com/maps/documentation) directly.
  * I export the GPS coordinates of these events and load them into the [Google Maps Javascript API](https://developers.google.com/maps/documentation) where I display the events as a heatmap.
  * The Google maps API makes it easy to zoom and translate on the map. You can adjust the color scheme, and the heatmap gradient, and other parameters
+```javascript
+var map, heatmap;\
+// load map centered on Seattle, default is roadmap\
+function initMap() \{\
+  map = new google.maps.Map(document.getElementById('map'), \{\
+    zoom: 11,\
+    center: \{lat: 47.63, lng: -122.35\},\
+    mapTypeId: 'roadmap'\
+  \});\
+\
+// ideally would like to have multiple different heatmaps, for now just one\
+  heatmap = new google.maps.visualization.HeatmapLayer(\{\
+    data: getPoints(),\
+    map: map\
+  \});\
+\}\
+\
+// default = red/green, alternative = red/blue\
+function toggleHeatmap() \{\
+  heatmap.setMap(heatmap.getMap() ? null : map);\ 
+\}\
+function changeRadius() \{\
+  heatmap.set('radius', heatmap.get('radius') ? null : 19);\
+\}\
+\
+function changeOpacity() \{\
+  heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);\
+\}\
+```
  ![example image](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/screenshot.png)
 
-* The live map can be found here:
+* This is a much more efficient way to specify some of the parameters for visualization. We can also make it more user friendly and interactive.
+* The final live map of OHCA in Seattle can be found here:
  * https://jsfiddle.net/user/nickmmark/fiddles/
+ 
 ```html
 <script async src="//jsfiddle.net/nickmmark/j6k2vhg0/embed/"></script>
 ```
+
 
 * Additional examples:
 _[live and interactive heatmap](https://jsfiddle.net/user/nickmmark/fiddles/) showing the locations of cardiac arrests in Seattle, WA_

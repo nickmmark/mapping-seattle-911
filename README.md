@@ -26,18 +26,16 @@ Mapping and geospatial analysis of open source Seattle Fire Realtime 911 data, w
  * The Google maps API makes it easy to zoom and translate on the map. You can adjust the color scheme, and the heatmap gradient, and other parameters
  ![example image](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/screenshot.png)
 
-
-https://jsfiddle.net/user/nickmmark/fiddles/
-
+* The live map can be found here:
+ * https://jsfiddle.net/user/nickmmark/fiddles/
 ```html
 <script async src="//jsfiddle.net/nickmmark/j6k2vhg0/embed/"></script>
 ```
 
-![mapping cardiac arrest calls in Seattle, WA](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/screenshot%202.png)
-
+* Additional examples:
 _[live and interactive heatmap](https://jsfiddle.net/user/nickmmark/fiddles/) showing the locations of cardiac arrests in Seattle, WA_
 
-
+![mapping cardiac arrest calls in Seattle, WA](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/screenshot%202.png)
 
 
 ### Data Source(s)

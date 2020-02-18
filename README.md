@@ -21,9 +21,11 @@ Mapping and geospatial analysis of open source Seattle Fire Realtime 911 data, w
 ![](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/heatmap_seattle_2.png)
 ![](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/heatmap_seatle_2_closeup.png)
 
-* But what if we want more nuanced control of the visualization? For this it helps to use the GoogleMaps API directly.
-* I export the GPS coordinates of these events and load them into the [Google Maps Javascript API](https://developers.google.com/maps/documentation) where I display the events as a heatmap.
-* The Google maps API makes it easy to zoom and translate on the map. You can adjust the color scheme, and the heatmap gradient, and other parameters
+* But what if we want more nuanced control of the visualization? For this it helps to use the [GoogleMaps API](https://developers.google.com/maps/documentation) directly.
+ * I export the GPS coordinates of these events and load them into the [Google Maps Javascript API](https://developers.google.com/maps/documentation) where I display the events as a heatmap.
+ * The Google maps API makes it easy to zoom and translate on the map. You can adjust the color scheme, and the heatmap gradient, and other parameters
+ ![example image](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/screenshot.png)
+
 
 https://jsfiddle.net/user/nickmmark/fiddles/
 
@@ -36,7 +38,6 @@ https://jsfiddle.net/user/nickmmark/fiddles/
 _[live and interactive heatmap](https://jsfiddle.net/user/nickmmark/fiddles/) showing the locations of cardiac arrests in Seattle, WA_
 
 
-![example image](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/screenshot.png)
 
 
 ### Data Source(s)

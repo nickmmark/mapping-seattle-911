@@ -1,14 +1,29 @@
 # mapping-seattle-911
 Mapping and geospatial analysis of open source Seattle Fire Realtime 911 data, with a particular focus on out of hospital cardiac arrest (OHCA). 
 
-![mapping cardiac arrest calls in Seattle, WA](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/screenshot%202.png)
-
-_[live and interactive heatmap](https://jsfiddle.net/user/nickmmark/fiddles/) showing the locations of cardiac arrests in Seattle, WA_
-
-### Background
 [Out of Hospital Cardiac Arrest](https://www.cdc.gov/mmwr/preview/mmwrhtml/ss6008a1.htm) is a life threatening emergency. Prompt initation of high quality CPR, early defibrilation, and advanced life support and transport to a suitable medical center can dramatically improve outcomes. Because of the time sensitive nature of cardiac arrest resuscitation, geospatial analysis of where cardiac arrests occur is potentially useful. Thus, identifying 'hotspots' for OHCA can conceivable be used in several different ways:
 - it can be used to determine where to place [AEDs](https://en.wikipedia.org/wiki/Automated_external_defibrillator)
 - it can be used to determine staging locations for ambulances
+
+### initial data exploration
+* I pull data from the [Seattle Fire 911 API](https://data.seattle.gov/Public-Safety/Seattle-Real-Time-Fire-911-Calls/kzjm-xkqj) provided by the [Seattle Open Data Program](http://www.seattle.gov/tech/initiatives/open-data).
+* I use the incident type ```"Medical Response, 7 per rule"``` to identify high acuity medical emergencies, of which OHCA is one particular subtype. This is not quite perfect (it also includes medical emergencies like 'person not breathing' but it's a good first pass approximation.
+
+![incident type example](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/incident_type.png)
+
+
+* Next I loaded the flat file (.csv) into powerBI and used [ArcGIS esri](https://powerbi.microsoft.com/en-us/power-bi-esri-arcgis/) to explore the data. Unfortunately, there are so many events it can be hard to identify patterns, even if we create an automated time slicer:
+
+![animated time series map of seattle 911 dispatched for Medical emergencies](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/animated_911_calls.gif)
+
+* We can use alternative visualization tools, such as [MapBox](https://docs.mapbox.com/help/tutorials/power-bi/) to build simple heatmaps. This starts to show us some more subtle patterns in the data.
+
+![](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/heatmap_seattle_2.png)
+![](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/heatmap_seatle_2_closeup.png)
+
+* But what if we want more nuanced control of the visualization? For this it helps to use the GoogleMaps API directly.
+* I export the GPS coordinates of these events and load them into the [Google Maps Javascript API](https://developers.google.com/maps/documentation) where I display the events as a heatmap.
+* The Google maps API makes it easy to zoom and translate on the map. You can adjust the color scheme, and the heatmap gradient, and other parameters
 
 https://jsfiddle.net/user/nickmmark/fiddles/
 
@@ -16,15 +31,11 @@ https://jsfiddle.net/user/nickmmark/fiddles/
 <script async src="//jsfiddle.net/nickmmark/j6k2vhg0/embed/"></script>
 ```
 
-### Details
-* I pull data from the [Seattle Fire 911 API](https://data.seattle.gov/Public-Safety/Seattle-Real-Time-Fire-911-Calls/kzjm-xkqj) provided by the [Seattle Open Data Program](http://www.seattle.gov/tech/initiatives/open-data).
-* I use the incident type '''Medical Response, 7 per rule''' to identify high acuity medical emergencies, of which OHCA is one particular subtype.
-* I export the GPS coordinates of these events and load them into the [Google Maps Javascript API](https://developers.google.com/maps/documentation) where I display the events as a heatmap.
-![incident type example](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/incident_type.png)
+![mapping cardiac arrest calls in Seattle, WA](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/screenshot%202.png)
 
-* The Google maps API makes it easy to zoom and translate on the map. You can adjust the color scheme, and the heatmap gradient, and 
+_[live and interactive heatmap](https://jsfiddle.net/user/nickmmark/fiddles/) showing the locations of cardiac arrests in Seattle, WA_
 
-### Examples
+
 ![example image](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/screenshot.png)
 
 

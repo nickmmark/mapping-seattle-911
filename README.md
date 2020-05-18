@@ -1,4 +1,7 @@
 # mapping-seattle-911
+Where do cardiac arrests occur in Seattle, WA?
+![animated time series map of seattle 911 dispatched for Medical emergencies](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/animated_911_calls.gif)
+
 Mapping and geospatial analysis of open source Seattle Fire Realtime 911 data, with a particular focus on out of hospital cardiac arrest (OHCA). 
 
 [Out of Hospital Cardiac Arrest](https://www.cdc.gov/mmwr/preview/mmwrhtml/ss6008a1.htm) is a life threatening emergency. Prompt initation of high quality CPR, early defibrilation, and advanced life support and transport to a suitable medical center can dramatically improve outcomes. Because of the time sensitive nature of cardiac arrest resuscitation, geospatial analysis of where cardiac arrests occur is potentially useful. Thus, identifying 'hotspots' for OHCA can conceivable be used in several different ways:

@@ -1,5 +1,6 @@
 # mapping-seattle-911
-Where do cardiac arrests occur in Seattle, WA?
+The purpose of this data exploration is an answer a simple question: Where do cardiac arrests occur in Seattle, WA?
+This type of analysis can be useful for staging ambulances, positioning AEDs, and targeting community enagagement.
 ![animated time series map of seattle 911 dispatched for Medical emergencies](https://github.com/nickmmark/mapping-seattle-911/blob/master/figures/animated_911_calls.gif)
 
 The purpose of this project is to faciliate mapping and geospatial analysis of open source Seattle Fire Realtime 911 data, with a particular focus on out of hospital cardiac arrest (OHCA). 

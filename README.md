@@ -10,6 +10,7 @@ The purpose of this project is to faciliate mapping and geospatial analysis of o
 - it can be used to determine staging locations for ambulances
 
 ### initial data exploration
+* You can see the [realtime feed of 911 dispatches](https://www2.cityofseattle.net/fire/realTime911/getRecsForDatePub.asp?action=Today&incDate=&rad1=des) which is a fairly unique level of transparency provided by the City of Seattle. In another repository, I show you we can use this near-realtime feed to predict ED visits.
 * I pull data from the [Seattle Fire 911 API](https://data.seattle.gov/Public-Safety/Seattle-Real-Time-Fire-911-Calls/kzjm-xkqj) provided by the [Seattle Open Data Program](http://www.seattle.gov/tech/initiatives/open-data).
 * I use the incident type ```"Medical Response, 7 per rule"``` to identify high acuity medical emergencies, of which OHCA is one particular subtype. This is not quite perfect (it also includes medical emergencies like 'person not breathing' but it's a good first pass approximation.
 
